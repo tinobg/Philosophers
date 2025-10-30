@@ -52,3 +52,20 @@ make fclean
 make re
 ```
 
+📌 Règles critiques
+🚫 Chaque philosophe = un thread
+🚫 Chaque fourchette = un mutex
+🚫 Aucun accès concurrent sans protection
+🚫 Pas de data races
+🚫 Aucune variable globale
+
+timestamp philosopher_id <action>
+
+```sh
+Actions :
+has taken a fork 🍴
+is eating 🍝
+is sleeping 😴
+is thinking 🤔
+died 💀 (doit être affiché dans les 10ms)
+```
